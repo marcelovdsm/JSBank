@@ -1,0 +1,23 @@
+{
+  "name": "jsbank",
+  "version": "1.0.0",
+  "description": "Um app de um banco feito em HTMl, CSS e Javascript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.sass css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelovdsm/JSBank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelovdsm/JSBank/issues"
+  },
+  "homepage": "https://github.com/marcelovdsm/JSBank#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

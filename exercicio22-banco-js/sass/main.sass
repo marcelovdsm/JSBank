@@ -1,0 +1,103 @@
+html
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background: #16A400
+  background: -moz-linear-gradient(-45deg, #16A400 0%, #00AA0F 49%, #127500 100%)
+  background: -webkit-linear-gradient(-45deg, #16A400 0%, #00AA0F 49%, #127500 100%)
+  background: linear-gradient(135deg, #16A400 0%, #00AA0F 49%, #127500 100%)
+  height: 100vh
+  width: 100vw
+  display: flex
+  align-items: center
+  justify-content: center
+
+.box
+  width: 300px
+  height: auto
+  background-color: #fff
+
+  .floating-label
+
+    input
+      margin-left: 2em
+
+
+//ícone lock
+.lock.icon 
+  color: #000
+  position: absolute
+  margin-left: 3px
+  margin-top: 10px
+  width: 13px
+  height: 6px
+  border-radius: 1px
+  border: solid 1px currentColor
+
+
+.lock.icon:before 
+  content: ''
+  position: absolute
+  left: 3px
+  top: -8px
+  width: 5px
+  height: 6px
+  border-radius: 4px 4px 0 0
+  border-top: solid 1px currentColor
+  border-left: solid 1px currentColor
+  border-right: solid 1px currentColor
+
+
+
+//ícone lock acima
+
+
+// Ícone mail
+.mail.icon 
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+
+.mail.icon:before 
+  content: ''
+  position: absolute
+  left: 7px
+  top: -4px
+  width: 1px
+  height: 10px
+  background-color: currentColor
+  -webkit-transform-origin: bottom
+          transform-origin: bottom
+  -webkit-transform: rotate(-54deg)
+          transform: rotate(-54deg)
+
+
+.mail.icon:after 
+  content: ''
+  position: absolute
+  left: 7px
+  top: -4px
+  width: 1px
+  height: 10px
+  background-color: currentColor
+  -webkit-transform-origin: bottom
+          transform-origin: bottom
+  -webkit-transform: rotate(54deg)
+          transform: rotate(54deg)
+// Ícone mail acima
+
+
+
+  
+
+
+
+  
+
