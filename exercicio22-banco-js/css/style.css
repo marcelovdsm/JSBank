@@ -15,9 +15,26 @@ body {
   justify-content: center; }
 
 .box {
-  width: 300px;
+  width: 450px;
   height: auto;
-  background-color: #fff; }
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px; }
+  .box .aside-box {
+    background-image: url("https://blog.leucotron.com.br/wp-content/uploads/2018/03/166841-8-passos-para-melhorar-a-experiencia-no-atendimento-em-bancos.jpg");
+    background-position: center;
+    background-size: 25em;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    padding: .7em;
+    border-radius: 10px 0 0 10px; }
+  .box .login-box {
+    display: flex;
+    padding: 2em; }
+    .box .login-box h2 {
+      text-align: center; }
   .box .floating-label input {
     margin-left: 2em; }
 
