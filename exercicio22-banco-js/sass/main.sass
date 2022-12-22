@@ -2,22 +2,33 @@ html
   margin: 0
   padding: 0
   box-sizing: border-box
+  font-family: 'roboto'
 
 body
-  background: #16A400
-  background: -moz-linear-gradient(-45deg, #16A400 0%, #00AA0F 49%, #127500 100%)
-  background: -webkit-linear-gradient(-45deg, #16A400 0%, #00AA0F 49%, #127500 100%)
-  background: linear-gradient(135deg, #16A400 0%, #00AA0F 49%, #127500 100%)
+  background: #58B3CE;
+  background: -moz-linear-gradient(top, #58B3CE 0%, #458EA2 50%, #2F606E 100%)
+  background: -webkit-linear-gradient(top, #58B3CE 0%, #458EA2 50%, #2F606E 100%)
+  background: linear-gradient(to bottom, #58B3CE 0%, #458EA2 50%, #2F606E 100%)
   height: 100vh
   width: 100vw
   display: flex
   align-items: center
+  justify-content: space-around
+  flex-direction: column
+  overflow: hidden
+  color: #22272c
+  margin-top: 6em
+
+main
+  display: flex
   justify-content: center
+  align-items: center
+  flex-direction: column
 
 .box
   width: 450px
   height: auto
-  background-color: #fff
+  background-color: #ffffffda
   display: flex
   flex-direction: row
   border-radius: 10px
@@ -25,7 +36,7 @@ body
   .aside-box
     background-image: url("https://blog.leucotron.com.br/wp-content/uploads/2018/03/166841-8-passos-para-melhorar-a-experiencia-no-atendimento-em-bancos.jpg")
     background-position: center
-    background-size: 25em
+    background-size: 27em
     background-repeat: no-repeat
     height: auto
     width: 100%
@@ -34,16 +45,83 @@ body
       
 
   .login-box
-    display: flex
     padding: 2em
 
-    h2
+    .title
       text-align: center
+      color: #22272c
+      border: none
+      background: none
+      font-size: 1.5em
+      font-weight: 600
+
+    .sign-up
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      a
+        text-decoration: none
+        color: #22272c
+        font-size: .8em
+
+      a:hover
+        text-decoration: underline
+
+
+    p
+      font-size: .85em
+
+    form
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
 
   .floating-label
 
     input
       margin-left: 2em
+      margin-bottom: .6em
+      padding: .3em
+      border: none
+      border-bottom: 1px solid #93a6b9
+      border-radius: 4px
+
+    #togglePassword
+      margin-left: -30px; 
+      cursor: pointer;
+  
+  #login-btn
+    margin-top: 2em
+    padding: .4em
+    border: .7px solid #93a6b9
+    border-radius: 4px
+    transition: .3s
+
+  #login-btn:hover
+    background-color: #22272c
+    color: #93a6b9
+    border: 1px solid #22272c
+ 
+
+.mission-phrase
+  font-weight: 600
+  font-size: 1.3em
+  color: #22272c
+
+
+footer
+  padding: 0 100vw 0vh 100vw
+  
+
+  .copyright
+    font-weight: bold
+    display: flex
+    flex-direction: row
+    gap: .3em
+    
 
 
 //ícone lock
@@ -77,14 +155,14 @@ body
 
 // Ícone mail
 .mail.icon 
-  color: #000;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-  border-radius: 1px;
-  border: solid 1px currentColor;
+  color: #000
+  position: absolute
+  margin-left: 2px
+  margin-top: 4px
+  width: 15px
+  height: 10px
+  border-radius: 1px
+  border: solid 1px currentColor
 
 .mail.icon:before 
   content: ''
