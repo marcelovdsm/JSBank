@@ -5,37 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JSBank | Login</title>
-  <script src="./exercicio22-banco-js/index.js" type="modules" defer></script>
+  <script src="/exercicio22-banco-js/index.js" type="modules" defer></script>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <main>
     <div class="box">
       <div class="aside-box">
       </div>
+
       <div class="login-box">
         <form action="" class="log-in" autocomplete="off">
+
           <button class="title">JSBank</button>
           <p>Insira suas credenciais:</p>
+
           <div class="floating-label">
             <span class="mail icon"></span>
             <input type="email" id="email-input" placeholder="Email" name="email">
           </div>
+
           <div class="floating-label">
             <span class="lock icon"></span>
             <input type="password" id="password-input" placeholder="Senha" name="password">
-            <i class="far fa-eye" id="togglePassword"></i>
+            <button id="showPassword" type="button"><img src="./img/view.png" alt=""></button>
           </div>
+
           <div class="sign-up">
             <a href="./pages/register.html">Esqueceu a senha?</a>
             <a href="./pages/register.html">Registre-se</a>
           </div>
+
           <button id="login-btn" type="submit" onclick="">Login</button>
         </form>
       </div>
     </div>
+
     <p class="mission-phrase">Nossa missão é a sua satisfação</p>
   </main>
 

@@ -49,12 +49,13 @@ module.exports = class App {
   }
 }
 
-const togglePassword = document.getElementById('togglePassword')
-const password = document.querySelector('#togglePassword');
+function togglePassword() {
+  let password = document.getElementById('password-input')
+  if(password.type === 'password'){
+    password.type = 'text'
+  } else {
+    password.type = 'password'
+  }
 
-togglePassword.addEventListener('click', function (e) {
-  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-  password.setAttribute('type', type);
-  this.classList.toggle('fa-eye-slash');
-  console.log("Clicou");
-});
+  document.getElementById('showPassword').addEventListener('click', togglePassword, true)
+}

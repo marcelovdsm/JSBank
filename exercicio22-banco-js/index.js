@@ -1,3 +1,4 @@
+console.log("Funcionando")
 const App = require("./App")
 
 App.createUser("marcelo@gmail.com", "Marcelo Victor")
