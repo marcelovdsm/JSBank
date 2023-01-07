@@ -1,9 +1,11 @@
-const Account = require("./Account")
+import { Account } from './Account.mjs'
 
-module.exports = class User {
+class User {
   constructor(fullName, email) {
     this.fullName = fullName
     this.email = email
     this.account = new Account(this)
   }
 }
+
+export { User }

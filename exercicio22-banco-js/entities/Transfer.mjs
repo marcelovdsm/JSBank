@@ -1,4 +1,4 @@
-module.exports = class Transfer {
+class Transfer {
   constructor(fromUser, toUser, value) {
     this.fromUser = fromUser
     this.toUser = toUser
@@ -6,3 +6,5 @@ module.exports = class Transfer {
     this.createdAt = new Date()
   }
 }
+
+export default Transfer

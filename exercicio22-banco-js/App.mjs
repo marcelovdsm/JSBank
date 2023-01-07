@@ -1,9 +1,9 @@
-const Deposit = require("./entities/Deposit")
-const Loan = require("./entities/Loan")
-const Transfer = require("./entities/Transfer")
-const User = require("./entities/User")
+import { Deposit } from './entities/Deposit.mjs'
+import { Loan } from './entities/Loan.mjs'
+import { Transfer } from './entities/Transfer.mjs'
+import { User } from './entities/User.mjs'
 
-module.exports = class App {
+class App {
   static #users = []
 
   static findUser(email) {
@@ -59,3 +59,5 @@ function togglePassword() {
 
   document.getElementById('showPassword').addEventListener('click', togglePassword, true)
 }
+
+export default App 

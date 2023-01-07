@@ -1,5 +1,6 @@
+import {App as App} from '/exercicio22-banco-js/App'
+
 console.log("Funcionando")
-const App = require("./App")
 
 App.createUser("marcelo@gmail.com", "Marcelo Victor")
 App.createUser("fulano@gmail.com", "Fulano Silva")

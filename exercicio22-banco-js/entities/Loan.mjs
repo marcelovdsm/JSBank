@@ -1,6 +1,6 @@
-const Installment = require("./Installment.js")
+import { Installment } from './Installment.mjs'
 
-module.exports = class Loan {
+class Loan {
   static #fee = 1.05
 
   constructor(value, installments){
@@ -20,3 +20,5 @@ module.exports = class Loan {
     Loan.#fee = 1 + newFeePercentage/100
   }
 }
+
+export { Loan }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Um app de um banco feito em HTMl, CSS e Javascript",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "node-sass sass/main.sass css/style.css -w"
   },

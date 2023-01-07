@@ -1,8 +1,5 @@
-const Deposit = require("./Deposit.js")
-const Loan = require("./Loan.js")
-const Transfer = require("./Transfer.js")
 
-module.exports = class Account {
+class Account {
   #balance
 
   constructor(user) {
@@ -38,3 +35,6 @@ module.exports = class Account {
     }
   }
 }
+
+
+export { Account }
